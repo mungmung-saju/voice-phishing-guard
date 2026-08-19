@@ -140,6 +140,7 @@ export default defineConfig(({ mode }) => {
   const apiKey = env.ANTHROPIC_API_KEY
 
   return {
+    base: './',
     plugins: [react(), tailwindcss(), claudeApiPlugin(apiKey)],
     server: {
       port: 5173,

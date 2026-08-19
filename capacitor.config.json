@@ -1,0 +1,13 @@
+{
+  "appId": "com.secure.voicephishingguard",
+  "appName": "VoiceGuard",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": true
+    }
+  }
+}

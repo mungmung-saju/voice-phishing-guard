@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { analyzeMessage } from './analyze'
 
 function riskMeta(score) {
   if (score >= 70) {
@@ -142,15 +143,7 @@ export default function App() {
     setError('')
 
     try {
-      const res = await fetch('/api/analyze', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message }),
-      })
-      const data = await res.json()
-      if (!res.ok) {
-        throw new Error(data.error || '분석에 실패했습니다.')
-      }
+      const data = await analyzeMessage(message)
 
       setResults((prev) => [
         {
