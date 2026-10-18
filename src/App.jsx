@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import { analyzeMessage } from './analyze'
 
 function riskMeta(score) {
@@ -363,6 +364,7 @@ export default function App() {
           )}
         </button>
       </section>
+      <Analytics />
     </div>
   )
 }
