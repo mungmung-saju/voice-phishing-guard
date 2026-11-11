@@ -76,10 +76,9 @@ export default function PrivacyPolicy() {
             <li>앱 이름: 보이스피싱 가드</li>
             <li>
               개발자 이메일:{' '}
-              <a className="text-blue underline" href="mailto:support@voiceguard.app">
-                support@voiceguard.app
-              </a>{' '}
-              <span className="text-xs">(실제 연락 가능한 이메일로 교체해 주세요)</span>
+              <a className="text-blue underline" href="mailto:achromatic662@gmail.com">
+                achromatic662@gmail.com
+              </a>
             </li>
           </ul>
         </Section>
